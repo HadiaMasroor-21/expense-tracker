@@ -12,5 +12,15 @@ const balance = document.getElementById("balance")
 
 form.addEventListener("submit" , function(event){
     event.preventDefault();
-    alert("Transaction Added")
+    const descriptionvalue = description.value
+    const amountvalue = amount.value
+    const typevalue = type.value
+
+    console.log(descriptionvalue)
+    console.log(amountvalue)
+    console.log(typevalue)
+
+    const li = document.createElement("li")
+    li.innerHTML = `${descriptionvalue} <span>Rs. ${amountvalue}</span>`;
+    transactionlist.appendChild(li)
 })
