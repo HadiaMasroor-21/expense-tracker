@@ -97,8 +97,16 @@ button:hover{
     background: #f8f8f8;
     padding: 12px;
     margin-bottom: 10px;
-    border-left: 5px solid green;
+    /* border-left: 5px solid green; */
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.income{
+    border-left: 5px solid green;
+}
+.expense{
+    border-left: 5px solid red;
+
 }
